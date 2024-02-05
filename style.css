@@ -7,114 +7,89 @@
 }
 
 body {
-    background-color: #b287a3;
+    background-color: #cceafa;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 16px; /* Added font size for better readability on smaller screens */
 }
 
+.main {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
 
+.sub-container {
+    display: inline;
+    margin: 2rem;
+}
+
+.sub-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.score {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.scores {
+    display: inline-block;
+    margin: 2rem;
+}
+
+#new-game {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3498db;
+}
+
+/* Hover State */
+#new-game:hover {
+    background-color: #217dbb;
+    border-color: #217dbb;
+}
 
 @media screen and (max-width:480px) {
-
-    body {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2rem;
-        margin-top: 30px;
-
-    }
-
-    img {
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    .sub-container {
-        height: 110px;
-        width: 110px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        object-fit: cover;
-
-    }
-
-    .sub-container:hover {
-        height: 110px;
-        width: 110px;
-        background-color: #7e4e60;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-
-
-    }
-
-    .container {
-        display: flex;
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .score-container {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-
-    }
-
-    #user-score,
-    #comp-score {
-        font-size: 2.5rem;
-    }
-
-    .scores {
-        font-size: 1.5rem;
-    }
-
-    .msg-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-
+    
     .msg-sub-container {
         margin-top: 30px;
         background-color: #c0f8d1;
         height: auto;
-        width: 50vw;
-        line-height: 40px;
+        width: 80vw; 
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         border-radius: 10px;
-
     }
-
-
 
     #new-game {
         padding: 10px;
         height: 40px;
-        width: 30vw;
+        width: 80vw;
         text-align: center;
         margin-top: 25px;
         border-radius: 10px;
         border: none;
     }
-
 }
